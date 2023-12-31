@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Pokémon';
-    src: url('/fonte/Pokemon Solid.ttf') format('truetype');
+    src: url('/fonte/Pokemon\ Solid.ttf') format('truetype');
 }
 
 body {
@@ -85,8 +85,7 @@ body {
     width: 100px;
     background-color:#FFCB05;
     color: black;
-    box-shadow: 2px 3px 5px #8f3500;
-    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 3px 5px #184A4A;
 }
 
 body::before {
@@ -117,7 +116,7 @@ body::before {
 
     @font-face {
         font-family: 'Pokémon';
-        src: url('/fonte/Pokemon Solid.ttf') format('truetype');
+        src: url('/fonte/Pokemon\ Solid.ttf') format('truetype');
     }
     
     body {
@@ -189,7 +188,7 @@ body::before {
 
     body::before {
         content: "";
-        background-image: url(responsivee.png);
+        background-image: url(imagens/responsivee.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -200,6 +199,5 @@ body::before {
         opacity: 1;
     }
 }
-
 
     
