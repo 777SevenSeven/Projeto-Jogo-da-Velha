@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Pokémon';
+    src: url('/fonte/Pokemon\ Solid.ttf') format('truetype');
+}
+
+body {
+    background-color: black;
+    font-family: 'Pokémon';
+    width: 100%;
+    height: 100%;
+}
+
+
+.fileiraH1,
+.fileiraH2,
+.fileiraH3 {
+    cursor: pointer;
+    margin-left: 550px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 800px;
+}
+
+#fileiraUM {
+    margin-top: 120px;
+}
+
+#quadrado1,
+#quadrado2,
+#quadrado3,
+#quadrado4,
+#quadrado5,
+#quadrado6,
+#quadrado7,
+#quadrado8,
+#quadrado9 {
+    display: flex;
+    background-color: #F0F8FF;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: calc(33.33% - 2px); 
+    border: 1px solid black;
+    color: #228B22;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 5rem;
+    opacity: 0.8;
+    fill-opacity: 1;
+}
+
+.quadradoUM {
+    border-radius: 25px 0 0 0;
+}
+
+.quadradoTRES {
+    border-radius: 0 25px 0 0;
+}
+
+.quadradoNOVE {
+    border-radius: 0 0 25px 0;
+}
+
+.quadradoSETE {
+    border-radius: 0 0 0 25px;
+}
+
+.music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botao-de-musica {
+    margin-left: 75px;
+    height: 30px;
+    width: 100px;
+    background-color:#FFCB05;
+    color: black;
+    box-shadow: 2px 3px 5px #8f3500;
+}
+
+body::before {
+    content: "";
+    background-image: url(imagens/backgroundImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+}
+
+.music-title {
+    color:#FFCB05;
+    text-shadow: 
+        -4px -4px 0 #005fb8,  
+         4px -5px 0 #003A70,
+        -4px  6px 0 #003A70,
+         4px  4px 0 #003A70;
+    margin-left: 25px;
+}
+

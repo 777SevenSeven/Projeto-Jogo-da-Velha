@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha - Pokémon</title>
+</head>
+<body>
+    <header class="music">
+        <h1 class="music-title">Musica tema:</h1>
+        <button class="botao-de-musica" onclick="colocarMusiquinha()">Play/Pause</button>
+
+        <audio id="myAudio">
+            <source src="/musica/soundTrack.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="victoryCharmanderAudio">
+            <source src="musica/charmander.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="victoryBulbasaurAudio">
+            <source src="musica/balbazar.mp3" type="audio/mp3">
+        </audio>
+    </header>
+
+    <div class="fileiraH1" id="fileiraUM">
+        <div class="quadradoUM" id="quadrado1" onclick="colocarXO(this)"></div>
+        <div class="quadradoDOIS" id="quadrado2" onclick="colocarXO(this)"></div>
+        <div class="quadradoTRES" id="quadrado3" onclick="colocarXO(this)"></div>
+    </div>
+
+    <div class="fileiraH2">
+        <div class="quadradoQUATRO" id="quadrado4" onclick="colocarXO(this)"></div>
+        <div class="quadradoCINCO" id="quadrado5" onclick="colocarXO(this)"></div>
+        <div class="quadradoSEIS" id="quadrado6" onclick="colocarXO(this)"></div>
+    </div>
+    
+    <div class="fileiraH3">
+        <div class="quadradoSETE" id="quadrado7" onclick="colocarXO(this)"></div>
+        <div class="quadradoOITO" id="quadrado8" onclick="colocarXO(this)"></div>
+        <div class="quadradoNOVE" id="quadrado9" onclick="colocarXO(this)"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
