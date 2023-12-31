@@ -27,6 +27,7 @@ body {
     flex-direction: row;
     height: 200px;
     width: 800px;
+    font-family: 'Pokémon';
 }
 
 #fileiraUM {
@@ -55,6 +56,7 @@ body {
     font-size: 5rem;
     opacity: 0.8;
     fill-opacity: 1;
+    font-family: 'Pokémon';
 }
 
 .quadradoUM {
@@ -142,6 +144,7 @@ body::before {
         width: 200px;
         height: 100px;
         margin: auto auto;
+        font-family: 'Pokémon';
     }
 
     #quadrado1,
@@ -166,6 +169,7 @@ body::before {
     font-size: 3rem;
     opacity: 0.8;
     fill-opacity: 1;
+    font-family: 'Pokémon';
 }
 
     .music-title {
@@ -173,6 +177,7 @@ body::before {
         order: 1;
         margin: 0;
         text-align: center;
+        text-family: 'Pokémon';
     }
 
     .botao-de-musica {
@@ -186,18 +191,6 @@ body::before {
         text-align: center;
     }
 
-    body::before {
-        content: "";
-        background-image: url(imagens/responsivee.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
-        opacity: 1;
-    }
 }
 
     
