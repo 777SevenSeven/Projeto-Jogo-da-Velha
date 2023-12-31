@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Pokémon';
-    src: url('/fonte/Pokemon\ Solid.ttf') format('truetype');
+    src: url('/fonte/Pokemon Solid.ttf') format('truetype');
 }
 
 body {
@@ -117,7 +117,7 @@ body::before {
 
     @font-face {
         font-family: 'Pokémon';
-        src: url('/fonte/Pokemon\ Solid.ttf') format('truetype');
+        src: url('/fonte/Pokemon Solid.ttf') format('truetype');
     }
     
     body {
