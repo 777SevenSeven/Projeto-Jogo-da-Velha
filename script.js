@@ -2,7 +2,7 @@ window.alert('Bem vindo(s)^^ Recomendação: jogue com 2 jogadores (Não há bot
 
 function colocarMusiquinha() {
     var audio = document.getElementById("myAudio");
-    audio.volume = 0.3;
+    audio.volume = 0.1;
 
     // Verifica se a música está pausada, se estiver, reproduz;
     if (audio.paused) {
@@ -91,28 +91,27 @@ for (let i = 1; i < 10; i++) {
                     window.alert('Vitória do Charmander! O tabuleiro será limpado. (feche a mensagem)');
                     myAudio.pause();
                     victoryAudio.play();
-                    victoryAudio.volume = 0.3;
+                    victoryAudio.volume = 0.1;
                     NOempate = 0;
                 }
                 else if(Round % 2 == 0) {
                     window.alert('Vitória do Bulbasaur! O tabuleiro será limpado. (feche a mensagem)');
                     myAudio.pause();
                     victoryAudio2.play();
-                    victoryAudio2.volume = 0.3;
+                    victoryAudio2.volume = 0.1;
                     NOempate = 0;
                 }
                 
-            } 
-            // Recarrega a página após a vitória
+                // Recarrega a página após a vitória
                 setTimeout(function () {
                     window.location.reload();
-                }, 3000); // Tempo de espera antes de recarregar a página - 3 segundos
+                }, 3000); // Tempo de espera antes de recarregar a página - 10 segundos
             } 
             if(Round == 10 && NOempate == 10)  {
                 window.alert('Empataram (feche a mensagem)');
                 setTimeout(function () {
                 window.location.reload();
-                }, 3000); // Tempo de espera antes de recarregar a página - 3 segundos
+                }, 3000); // Tempo de espera antes de recarregar a página - 5 segundos
             }
                 
         }, 500); //meio segundo de delay para aparecer as mensagems de vitória e a musica
