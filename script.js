@@ -102,16 +102,17 @@ for (let i = 1; i < 10; i++) {
                     NOempate = 0;
                 }
                 
-                // Recarrega a página após a vitória
+            } 
+            // Recarrega a página após a vitória
                 setTimeout(function () {
                     window.location.reload();
-                }, 10000); // Tempo de espera antes de recarregar a página - 10 segundos
+                }, 3000); // Tempo de espera antes de recarregar a página - 10 segundos
             } 
             if(Round == 10 && NOempate == 10)  {
                 window.alert('Empataram (feche a mensagem)');
                 setTimeout(function () {
                 window.location.reload();
-                }, 5000); // Tempo de espera antes de recarregar a página - 5 segundos
+                }, 3000); // Tempo de espera antes de recarregar a página - 5 segundos
             }
                 
         }, 500); //meio segundo de delay para aparecer as mensagems de vitória e a musica
