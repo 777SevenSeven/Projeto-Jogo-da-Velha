@@ -2,6 +2,7 @@ window.alert('Bem vindo(s)^^ Recomendação: jogue com 2 jogadores (Não há bot
 
 function colocarMusiquinha() {
     var audio = document.getElementById("myAudio");
+    audio.volume = 0.1;
 
     // Verifica se a música está pausada, se estiver, reproduz;
     if (audio.paused) {
@@ -90,12 +91,14 @@ for (let i = 1; i < 10; i++) {
                     window.alert('Vitória do Charmander! O tabuleiro será limpado. (feche a mensagem)');
                     myAudio.pause();
                     victoryAudio.play();
+                    victoryAudio.volume = 0.1;
                     NOempate = 0;
                 }
                 else if(Round % 2 == 0) {
                     window.alert('Vitória do Bulbasaur! O tabuleiro será limpado. (feche a mensagem)');
                     myAudio.pause();
                     victoryAudio2.play();
+                    victoryAudio2.volume = 0.1;
                     NOempate = 0;
                 }
                 
