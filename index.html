@@ -1,50 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <!--SEO do Site-->
+    <!-- SEO do Site -->
     <meta charset="UTF-8">
+    <meta name="description" content="Jogo da velha com tema Pokémon (sem bot)">
+    <meta name="keywords" content="Jogo da velha, Pokémon, Inspirado">
+    <meta name="author" content="André Antônio da Silva Queiroz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Open Graphs Para redes sociais-->
+    <!-- Open Graph para redes sociais -->
     <meta property="og:title" content="Jogo da Velha">
     <meta property="og:description" content="Jogo da velha com tema Pokémon">
+    <meta property="og:image" content="imagens/Square.png">
+    <meta property="og:url" content="https://777sevenseven.github.io/Projeto-Jogo-da-Velha/">
 
-    <meta name="description" content="é um jogo da velha, com tema do pokémon (não há bot)"> <!--Descrição do site quando encontrado via pesquisa-->
-    <meta name="keywords" content="Jogo da velha, Pokémon, Inspirado"> <!-- Palavras-chave relevantes -->
-    <meta name="author" content="André Antônio da Silva Queiroz"> <!-- Autor do conteúdo -->
+    <!-- Compatibilidade com outros sites ou dispositivos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Para melhorar a experiência de dispositivos móveis quando compartilhado o site -->
-    <meta property="og:image" content="">
-    <meta property="og:url" content=""> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-     <!-- Compatibilidade com outros sites ou dispositivos -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com Internet Explorer -->
-
-    <!-- Ícone para apple -->
-    <link rel="apple-touch-icon" sizes="180x180" href="">
-    <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link rel="icon" type="image/png" sizes="16x16" href="">
-
-    <!-- Ícone para Android -->
-    <link rel="icon" type="image/png" sizes="192x192" href="imagens/logo.png">
-
-    <!-- Ícone para Windows -->
-    <meta name="msapplication-TileImage" content="777SevenSevenFavicon144x144.png"> 
+    <!-- Ícones -->
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="imagens/192x192.png">
+    <meta name="msapplication-TileImage" content="imagens/Square.png"> 
     <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="icon" href="imagens/logo.png" type="image/x-icon">
 
-    <link rel="icon" href="imagens/logo.png" type="image/x-icon"> <!--fav-icon do site-->
+    <!-- Estilos -->
     <link href="style.css" rel="stylesheet" type="text/css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da Página -->
     <title>Jogo da Velha - Pokémon</title>
 </head>
 <body>
+    <!-- Cabeçalho com Música -->
     <header class="music">
-        <h1 class="music-title">Musica tema:</h1>
+        <h1 class="music-title">Música tema:</h1>
         <button class="botao-de-musica" onclick="colocarMusiquinha()">Play/Pause</button>
 
         <audio id="myAudio">
-            <source src="musica/soundTrack.mp3" type="audio/mp3">
+            <source src="/musica/soundTrack.mp3" type="audio/mp3">
         </audio>
 
         <audio id="victoryCharmanderAudio">
@@ -56,23 +51,29 @@
         </audio>
     </header>
 
-    <div class="fileiraH1" id="fileiraUM">
-        <div class="quadradoUM" id="quadrado1" onclick="colocarXO(this)"></div>
-        <div class="quadradoDOIS" id="quadrado2" onclick="colocarXO(this)"></div>
-        <div class="quadradoTRES" id="quadrado3" onclick="colocarXO(this)"></div>
+    <!-- Tabuleiro do Jogo da Velha -->
+    <div class="fileiraH1" id="fileiraUM" role="group" aria-labelledby="fileiraUmLabel">
+        <h2 id="fileiraUmLabel" class="sr-only">Primeira Fileira</h2>
+        <div class="quadradoUM" id="quadrado1" onclick="colocarXO(this)" role="button" tabindex="0"></div>
+        <div class="quadradoDOIS" id="quadrado2" onclick="colocarXO(this)" role="button" tabindex="0"></div>
+        <div class="quadradoTRES" id="quadrado3" onclick="colocarXO(this)" role="button" tabindex="0"></div>
     </div>
 
-    <div class="fileiraH2">
-        <div class="quadradoQUATRO" id="quadrado4" onclick="colocarXO(this)"></div>
-        <div class="quadradoCINCO" id="quadrado5" onclick="colocarXO(this)"></div>
-        <div class="quadradoSEIS" id="quadrado6" onclick="colocarXO(this)"></div>
+    <div class="fileiraH2" role="group" aria-labelledby="fileiraDoisLabel">
+        <h2 id="fileiraDoisLabel" class="sr-only">Segunda Fileira</h2>
+        <div class="quadradoQUATRO" id="quadrado4" onclick="colocarXO(this)" role="button" tabindex="0"></div>
+        <div class="quadradoCINCO" id="quadrado5" onclick="colocarXO(this)" role="button" tabindex="0"></div>
+        <div class="quadradoSEIS" id="quadrado6" onclick="colocarXO(this)" role="button" tabindex="0"></div>
     </div>
     
-    <div class="fileiraH3">
-        <div class="quadradoSETE" id="quadrado7" onclick="colocarXO(this)"></div>
-        <div class="quadradoOITO" id="quadrado8" onclick="colocarXO(this)"></div>
-        <div class="quadradoNOVE" id="quadrado9" onclick="colocarXO(this)"></div>
+    <div class="fileiraH3" role="group" aria-labelledby="fileiraTresLabel">
+        <h2 id="fileiraTresLabel" class="sr-only">Terceira Fileira</h2>
+        <div class="quadradoSETE" id="quadrado7" onclick="colocarXO(this)" role="button" tabindex="0"></div>
+        <div class="quadradoOITO" id="quadrado8" onclick="colocarXO(this)" role="button" tabindex="0"></div>
+        <div class="quadradoNOVE" id="quadrado9" onclick="colocarXO(this)" role="button" tabindex="0"></div>
     </div>
+
+    <!-- Script do Jogo -->
     <script src="script.js"></script>
 </body>
 </html>
