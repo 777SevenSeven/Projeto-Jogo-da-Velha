@@ -177,7 +177,7 @@ body::before {
 
     body::before {
         content: "";
-        background-image: url(imagens/responsivee.png);
+        background-image: url(responsivee.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
