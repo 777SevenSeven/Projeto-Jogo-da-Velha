@@ -8,8 +8,8 @@ CSS
 JavaScript
 
 ## Demo
-
-Click the image above to watch a demo of the game.
+https://vimeo.com/899345650
+Click the in the link above to watch a demo of the game.
 
 ## Installation
 To install and play the game locally, follow these steps:
